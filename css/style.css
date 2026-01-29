@@ -1,0 +1,169 @@
+/* =====================
+   GLOBAL RESET
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #111;
+  background: #ffffff;
+  line-height: 1.5;
+}
+
+/* =====================
+   HEADER
+===================== */
+.header {
+  padding: 80px 60px 40px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 42px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+/* =====================
+   CARS GRID
+===================== */
+.cars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 48px;
+  padding: 60px;
+}
+
+.car-card img {
+  width: 100%;
+  border-radius: 6px;
+  transition: transform 0.4s ease;
+}
+
+.car-card:hover img {
+  transform: scale(1.03);
+}
+
+.car-info {
+  padding-top: 16px;
+}
+
+.series {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #666;
+}
+
+.car-info h2 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 8px 0;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+/* =====================
+   BUTTON (BMW STYLE)
+===================== */
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  background: #1c69d4;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #1553a0;
+}
+
+/* =====================
+   DETAIL PAGE
+===================== */
+.back {
+  display: inline-block;
+  margin: 40px 60px 0;
+  text-decoration: none;
+  color: #1c69d4;
+  font-size: 14px;
+}
+
+.detail {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  padding: 60px;
+}
+
+.detail img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.detail-info span {
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.detail-info h1 {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 12px 0;
+}
+
+.detail-info p {
+  font-size: 16px;
+  margin: 12px 0;
+}
+
+.detail-info h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 900px) {
+  .detail {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cars-grid {
+    padding: 30px;
+    gap: 32px;
+  }
+
+  .header {
+    padding: 50px 30px 20px;
+  }
+
+  .detail {
+    padding: 30px;
+  }
+
+  .back {
+    margin: 20px 30px;
+  }
+}
