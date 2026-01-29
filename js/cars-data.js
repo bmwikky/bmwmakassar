@@ -5,23 +5,22 @@ const cars = [
     name: "218 Gran Coupé M Sport",
     series: "Seri 2 Gran Coupé",
     price: "Rp. 1.053.000.000",
-    image: "images/cars/218-gran-coupe.jpg"
+    image: "images/cars/218.png"
   },
 
   // SERI 3
-  {
     id: "320i",
     name: "320i M Sport",
     series: "Seri 3",
     price: "Rp. 1.210.000.000",
-    image: "images/cars/320i.jpg"
+    image: "images/cars/320i.png"
   },
   {
     id: "330i",
     name: "330i M Sport Pro",
     series: "Seri 3",
     price: "Rp. 1.320.000.000",
-    image: "images/cars/330i.jpg"
+    image: "images/cars/330i.png"
   },
   {
     id: "330i-50th",
