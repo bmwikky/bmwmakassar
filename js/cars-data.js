@@ -2,8 +2,8 @@ const cars = [
   // SERI 2
   {
     id: "218-gran-coupe",
-    name: "218 Gran Coupé M Sport",
-    series: "Seri 2 Gran Coupé",
+    name: "218 Gran Coupe M Sport",
+    series: "Seri 2 Gran Coupe",
     price: "Rp. 1.053.000.000",
     image: "images/cars/218.png"
   },
@@ -24,7 +24,7 @@ const cars = [
   },
   {
     id: "330i-50th",
-    name: "330i M Sport Pro – 50th AE",
+    name: "330i M Sport Pro–50th AE",
     series: "Seri 3",
     price: "Rp. 1.320.000.000",
     image: "images/cars/330i-50th.jpg"
@@ -33,7 +33,7 @@ const cars = [
   // SERI 4
   {
     id: "430i-coupe",
-    name: "430i Coupé",
+    name: "430i Coupe",
     series: "Seri 4",
     price: "Rp. 1.778.000.000",
     image: "images/cars/430i-coupe.png"
