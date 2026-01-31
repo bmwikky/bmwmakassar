@@ -61,37 +61,6 @@ body {
 .navbar .menu a:hover {
   opacity: 0.7;
 }
-/* =====================
-   HERO SECTION
-===================== */
-.hero {
-  height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-              url("../images/hero.jpg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  padding: 0 20px;
-}
-
-.hero h1 {
-  font-size: 52px;
-  font-weight: 500;
-  margin-bottom: 16px;
-}
-
-.hero p {
-  font-size: 18px;
-  margin-bottom: 28px;
-  color: #ddd;
-}
-
-.hero .btn {
-  padding: 14px 30px;
-  font-size: 15px;
-}
 
 /* =====================
    CARS GRID
