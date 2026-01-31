@@ -144,7 +144,7 @@ const cars = [
     name: "M4 Competition Coupe M xDrive",
     series: "BMW M",
     price: "Rp. 2.875.000.000",
-    image: "images/cars/m4-coupe.png"
+    image: "images/cars/m4-competition.png"
   },
   {
     id: "m4-convertible",
