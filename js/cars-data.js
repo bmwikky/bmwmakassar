@@ -24,7 +24,7 @@ const cars = [
   },
   {
     id: "330i-50th",
-    name: "330i M Sport Pro–50th AE",
+    name: "330i M Sport Pro-50th AE",
     series: "Seri 3",
     price: "Rp. 1.320.000.000",
     image: "images/cars/330i-50th.jpg"
