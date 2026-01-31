@@ -22,14 +22,7 @@ const cars = [
     price: "Rp. 1.320.000.000",
     image: "images/cars/330i.png"
   },
-  {
-    id: "330i-50th",
-    name: "330i M Sport Pro-50th AE",
-    series: "Seri 3",
-    price: "Rp. 1.320.000.000",
-    image: "images/cars/330i-50th.jpg"
-  },
-
+  
   // SERI 4
   {
     id: "430i-coupe",
@@ -83,13 +76,6 @@ const cars = [
     series: "The X5",
     price: "Rp. 2.058.000.000",
     image: "images/cars/x5.png"
-  },
-  {
-    id: "x5-pro",
-    name: "X5 xDrive40i M Sport Pro",
-    series: "The X5",
-    price: "Rp. 2.078.000.000",
-    image: "images/cars/x5-pro.png"
   },
   {
     id: "x6",
@@ -155,7 +141,7 @@ const cars = [
   },
   {
     id: "m4-coupe",
-    name: "M4 Competition Coupé M xDrive",
+    name: "M4 Competition Coupe M xDrive",
     series: "BMW M",
     price: "Rp. 2.875.000.000",
     image: "images/cars/m4-coupe.png"
