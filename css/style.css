@@ -201,3 +201,38 @@ body {
     margin: 20px 30px;
   }
 }
+/* =====================
+   CONTACT PAGE
+===================== */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.contact-card {
+  background: #fff;
+  max-width: 460px;
+  width: 100%;
+  padding: 50px 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.contact-card h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.contact-card p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 14px;
+  margin: 10px 0;
+}
