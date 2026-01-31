@@ -272,19 +272,26 @@ body {
 ===================== */
 .wa-float {
   position: fixed;
-  right: 20px;
-  bottom: 20px;
-  background: #25D366;
-  color: #fff;
-  width: 56px;
-  height: 56px;
+  bottom: 26px;
+  right: 26px;
+  width: 58px;
+  height: 58px;
+  background: linear-gradient(135deg, #25d366, #128c7e);
   border-radius: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 28px;
-  text-decoration: none;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,.25);
   z-index: 9999;
+  transition: all 0.3s ease;
 }
-<a href="https://wa.me/628131726712" target="_blank" class="wa-float">💬</a>
+
+.wa-float:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 28px rgba(0,0,0,.35);
+}
+
+.wa-float svg {
+  display: block;
+}
+
