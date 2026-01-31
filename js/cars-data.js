@@ -7,7 +7,7 @@ const cars = [
     price: "Rp. 1.053.000.000",
     image: "images/cars/218.png"
   },
-
+  {
   // SERI 3
     id: "320i",
     name: "320i M Sport",
