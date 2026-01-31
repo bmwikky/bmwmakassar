@@ -7,28 +7,45 @@
 </head>
 <body>
 
-<div id="detail"></div>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="logo">BMW Makassar</div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="cars.html">Models</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+  <!-- ===== END NAVBAR ===== -->
 
-<script src="js/cars-data.js"></script>
-<script>
-  const params = new URLSearchParams(window.location.search);
-  const modelId = params.get("model");
+  <div id="detail"></div>
 
-  const car = cars.find(c => c.id === modelId);
+  <script src="js/cars-data.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const modelId = params.get("model");
 
-  if (car) {
-    document.getElementById("detail").innerHTML = `
-      <h1>${car.name}</h1>
-      <img src="${car.image}" style="max-width:600px">
-      <p><strong>Series:</strong> ${car.series}</p>
-      <p><strong>Harga:</strong> ${car.price}</p>
-      <a href="cars.html">← Kembali ke daftar</a>
-    `;
-  } else {
-    document.getElementById("detail").innerHTML =
-      "<p>Mobil tidak ditemukan.</p>";
-  }
-</script>
+    const car = cars.find(c => c.id === modelId);
+
+    if (car) {
+      document.getElementById("detail").innerHTML = `
+        <div class="detail">
+          <img src="${car.image}">
+          <div class="detail-info">
+            <span>${car.series}</span>
+            <h1>${car.name}</h1>
+            <p>Harga OTR Makassar</p>
+            <h3>${car.price}</h3>
+            <a href="cars.html" class="btn">← Kembali ke Daftar</a>
+          </div>
+        </div>
+      `;
+    } else {
+      document.getElementById("detail").innerHTML =
+        "<p style='padding:60px'>Mobil tidak ditemukan.</p>";
+    }
+  </script>
 
 </body>
 </html>
+
