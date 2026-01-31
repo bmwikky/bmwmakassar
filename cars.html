@@ -1,46 +1,53 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <title>BMW Line Up | BMW Astra Makassar</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
 <body>
+
+  <!-- ===== NAVBAR ===== -->
   <nav class="navbar">
-  <div class="logo">BMW Astra Makassar</div>
-  <div class="menu">
-    <a href="index.html">Home</a>
-    <a href="cars.html">Model</a>
-    <a href="#">Kontak</a>
-  </div>
-</nav>
+    <div class="logo">BMW Astra Makassar</div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="cars.html">Model</a>
+      <a href="contact.html">Kontak</a>
+    </div>
+  </nav>
+  <!-- ===== END NAVBAR ===== -->
 
-<h1>BMW Model Line Up</h1>
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <h1>BMW Model Line Up</h1>
+    <p>Explore The Ultimate Driving Machines</p>
+  </header>
+  <!-- ===== END HEADER ===== -->
 
-<div class="car-grid" id="carGrid"></div>
+  <!-- ===== GRID ===== -->
+  <section class="cars-grid" id="carGrid"></section>
+  <!-- ===== END GRID ===== -->
 
-<script src="js/cars-data.js"></script>
-<script>
-  const grid = document.getElementById("carGrid");
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/628131726712" class="wa-float" target="_blank" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 32 32" width="26" height="26">
+      <path fill="#fff" d="M16.04 2.003c-7.732 0-14 6.268-14 14 0 2.464.64 4.88 1.856 7.012L2 30l7.204-1.892c2.044 1.116 4.344 1.704 6.836 1.704 7.732 0 14-6.268 14-14s-6.268-14-14-14z"/>
+    </svg>
+  </a>
 
-  cars.forEach(car => {
-    grid.innerHTML += `
-      <div class="car-card">
-        <img src="${car.image}" alt="${car.name}">
-        <h3>${car.name}</h3>
-        <p>${car.series}</p>
-        <p class="price">${car.price}</p>
-        <a href="detail.html?model=${car.id}">Lihat Detail</a>
-      </div>
-    `;
-  });
-</script>
-<!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/628131726712" class="wa-float" target="_blank" aria-label="Chat WhatsApp">
-  <svg viewBox="0 0 32 32" width="26" height="26">
-    <path fill="#fff" d="M16.04 2.003c-7.732 0-14 6.268-14 14 0 2.464.64 4.88 1.856 7.012L2 30l7.204-1.892c2.044 1.116 4.344 1.704 6.836 1.704 7.732 0 14-6.268 14-14s-6.268-14-14-14zm0 25.448c-2.232 0-4.42-.596-6.324-1.724l-.452-.268-4.276 1.124 1.14-4.168-.296-.428c-1.2-1.744-1.832-3.784-1.832-5.984 0-5.936 4.828-10.764 10.764-10.764S26.8 10.065 26.8 16c0 5.936-4.828 10.764-10.764 10.764zm6.164-8.156c-.336-.168-1.988-.98-2.296-1.092-.308-.112-.532-.168-.756.168-.224.336-.868 1.092-1.064 1.316-.196.224-.392.252-.728.084-.336-.168-1.416-.52-2.696-1.66-.996-.888-1.668-1.988-1.864-2.324-.196-.336-.02-.516.148-.684.152-.152.336-.392.504-.588.168-.196.224-.336.336-.56.112-.224.056-.42-.028-.588-.084-.168-.756-1.82-1.036-2.492-.272-.656-.548-.568-.756-.568l-.644-.012c-.224 0-.588.084-.896.42-.308.336-1.176 1.148-1.176 2.8 0 1.652 1.204 3.248 1.372 3.472.168.224 2.372 3.624 5.744 5.084.804.348 1.432.556 1.92.712.808.256 1.544.22 2.124.132.648-.096 1.988-.812 2.268-1.596.28-.784.28-1.456.196-1.596-.084-.14-.308-.224-.644-.392z"/>
-  </svg>
-</a>
+  <script src="js/cars-data.js"></script>
+  <script>
+    const grid = document.getElementById("carGrid");
+
+    cars.forEach(car => {
+      grid.innerHTML += `
+        <div class="car-card">
+          <div class="car-img">
+            <img src="${car.image}" alt="${car.name}">
+          </div>
+          <div class="car-info">
+            <span class="series">${car.series}</span>
+            <h2>${car.name}</h2>
+            <p class="price">${car.price}</p>
+            <a href="detail.html?model=${car.id}" class="btn">Lihat Detail</a>
+          </div>
+        </div>
+      `;
+    });
+  </script>
 
 </body>
-</html>
