@@ -57,27 +57,34 @@ body {
 <div class="logo">BMW <span>Astra Makassar</span></div>
 
 .menu a {
-  color: #ddd;
+  color: #f2f2f2;
   text-decoration: none;
   margin-left: 32px;
-  font-weight: 500;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
   position: relative;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
+
 
 .menu a:hover {
   color: #1C69D4;
+  opacity: 0.9;
 }
+
 
 .menu a::after {
   content: "";
   position: absolute;
   width: 0;
-  height: 2px;
-  background: #1C69D4;
+  height: 1.5px;
+  background: linear-gradient(90deg,#1C69D4,#3c8dff);
   left: 0;
   bottom: -6px;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .menu a:hover::after {
