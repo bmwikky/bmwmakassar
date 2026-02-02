@@ -6,51 +6,12 @@
   <link rel="icon" type="image/png" href="images/bmw-logo.png">
   <link rel="stylesheet" href="css/style.css">
   <style>
-    body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      background: #f5f5f5;
-      color: #111;
-      margin: 0;
-      padding: 0;
+    /* ===== Navbar Override Minimal ===== */
+    .navbar .logo-text span {
+      color: #1C69D4; /* sama dengan navbar di style.css utama */
     }
 
-    /* Navbar */
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 40px;
-      background: #111;
-      color: #fff;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    .logo-box {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .logo-img {
-      width: 40px;
-      height: 40px;
-    }
-    .logo-text span {
-      font-weight: 700;
-      color: #00b0ff;
-    }
-    .menu a {
-      color: #fff;
-      margin-left: 25px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-    .menu a:hover {
-      color: #00b0ff;
-    }
-
-    /* Detail Container */
+    /* ===== Detail Container ===== */
     .detail-container {
       max-width: 1000px;
       margin: 40px auto;
@@ -60,6 +21,7 @@
       box-shadow: 0 10px 25px rgba(0,0,0,0.1);
       display: flex;
       flex-direction: column;
+      padding: 0;
     }
 
     .detail-top {
@@ -102,7 +64,7 @@
     }
     .car-info .price {
       font-size: 28px;
-      color: #00b0ff;
+      color: #1C69D4; /* biru Astra konsisten */
       margin: 10px 0 20px 0;
       font-weight: 700;
     }
@@ -132,7 +94,7 @@
       transition: 0.3s;
     }
     .back-btn:hover {
-      background-color: #00b0ff;
+      background-color: #1C69D4; /* biru konsisten */
     }
 
     @media(max-width:900px) {
@@ -167,12 +129,10 @@
   <!-- Script -->
   <script src="js/cars-data.js"></script>
   <script>
-    // Ambil ID mobil dari query string (string)
-const params = new URLSearchParams(window.location.search);
-const carId = params.get('model'); // biarkan string
+    const params = new URLSearchParams(window.location.search);
+    const carId = params.get('model');
 
-const car = cars.find(c => c.id === carId); // cocokkan string dengan string
-
+    const car = cars.find(c => c.id === carId);
     const container = document.getElementById('detailContainer');
 
     if(car) {
@@ -185,12 +145,12 @@ const car = cars.find(c => c.id === carId); // cocokkan string dengan string
             <span class="series">${car.series}</span>
             <h1>${car.name}</h1>
             <p class="price">${car.price}</p>
-            <p><strong>Mesin:</strong> ${car.engine}</p>
-            <p><strong>Transmisi:</strong> ${car.transmission}</p>
-            <p><strong>Warna:</strong> ${car.color}</p>
+            <p><strong>Mesin:</strong> ${car.engine || '-'}</p>
+            <p><strong>Transmisi:</strong> ${car.transmission || '-'}</p>
+            <p><strong>Warna:</strong> ${car.color || '-'}</p>
             <p><strong>Fitur Unggulan:</strong></p>
             <ul class="features-list">
-              ${car.features.map(f => `<li>${f}</li>`).join('')}
+              ${(car.features || []).map(f => `<li>${f}</li>`).join('')}
             </ul>
             <a href="cars.html" class="back-btn">Kembali ke Model</a>
           </div>
@@ -204,13 +164,12 @@ const car = cars.find(c => c.id === carId); // cocokkan string dengan string
     }
   </script>
 
-<!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/628131726712" class="wa-float" target="_blank" aria-label="Chat WhatsApp">
-  <svg viewBox="0 0 32 32" width="26" height="26">
-    <path fill="#fff" d="M16.04 2.003c-7.732 0-14 6.268-14 14 0 2.464.64 4.88 1.856 7.012L2 30l7.204-1.892c2.044 1.116 4.344 1.704 6.836 1.704 7.732 0 14-6.268 14-14s-6.268-14-14-14zm0 25.448c-2.232 0-4.42-.596-6.324-1.724l-.452-.268-4.276 1.124 1.14-4.168-.296-.428c-1.2-1.744-1.832-3.784-1.832-5.984 0-5.936 4.828-10.764 10.764-10.764S26.8 10.065 26.8 16c0 5.936-4.828 10.764-10.764 10.764zm6.164-8.156c-.336-.168-1.988-.98-2.296-1.092-.308-.112-.532-.168-.756.168-.224.336-.868 1.092-1.064 1.316-.196.224-.392.252-.728.084-.336-.168-1.416-.52-2.696-1.66-.996-.888-1.668-1.988-1.864-2.324-.196-.336-.02-.516.148-.684.152-.152.336-.392.504-.588.168-.196.224-.336.336-.56.112-.224.056-.42-.028-.588-.084-.168-.756-1.82-1.036-2.492-.272-.656-.548-.568-.756-.568l-.644-.012c-.224 0-.588.084-.896.42-.308.336-1.176 1.148-1.176 2.8 0 1.652 1.204 3.248 1.372 3.472.168.224 2.372 3.624 5.744 5.084.804.348 1.432.556 1.92.712.808.256 1.544.22 2.124.132.648-.096 1.988-.812 2.268-1.596.28-.784.28-1.456.196-1.596-.084-.14-.308-.224-.644-.392z"/>
-  </svg>
-</a>
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/628131726712" class="wa-float" target="_blank" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 32 32" width="26" height="26">
+      <path fill="#fff" d="M16.04 2.003c-7.732 0-14 6.268-14 14 0 2.464.64 4.88 1.856 7.012L2 30l7.204-1.892c2.044 1.116 4.344 1.704 6.836 1.704 7.732 0 14-6.268 14-14s-6.268-14-14-14zm0 25.448c-2.232 0-4.42-.596-6.324-1.724l-.452-.268-4.276 1.124 1.14-4.168-.296-.428c-1.2-1.744-1.832-3.784-1.832-5.984 0-5.936 4.828-10.764 10.764-10.764S26.8 10.065 26.8 16c0 5.936-4.828 10.764-10.764 10.764zm6.164-8.156c-.336-.168-1.988-.98-2.296-1.092-.308-.112-.532-.168-.756.168-.224.336-.868 1.092-1.064 1.316-.196.224-.392.252-.728.084-.336-.168-1.416-.52-2.696-1.66-.996-.888-1.668-1.988-1.864-2.324-.196-.336-.02-.516.148-.684.152-.152.336-.392.504-.588.168-.196.224-.336.336-.56.112-.224.056-.42-.028-.588-.084-.168-.756-1.82-1.036-2.492-.272-.656-.548-.568-.756-.568l-.644-.012c-.224 0-.588.084-.896.42-.308.336-1.176 1.148-1.176 2.8 0 1.652 1.204 3.248 1.372 3.472.168.224 2.372 3.624 5.744 5.084.804.348 1.432.556 1.92.712.808.256 1.544.22 2.124.132.648-.096 1.988-.812 2.268-1.596.28-.784.28-1.456.196-1.596-.084-.14-.308-.224-.644-.392z"/>
+    </svg>
+  </a>
 
 </body>
 </html>
-
