@@ -101,7 +101,7 @@ const cars = [
     engine: "2.0L TwinPower Turbo, 184 hp",
     transmission: "8-Speed Steptronic Automatic",
     color: "Alpine White, Black Sapphire, Phytonic Blue",
-    features: ["M Sport Package", "Adaptive LED Headlights", "Leather Interior"]
+    features: ["M Sport Package", "Adaptive LED Headlights", "Line keep Assistant", "Panoramic Sunroof"]
   },
   {
     id: "x5-lci",
@@ -112,7 +112,7 @@ const cars = [
     engine: "3.0L TwinPower Turbo, 340 hp",
     transmission: "8-Speed Steptronic Automatic",
     color: "Black Sapphire, Mineral White, Phytonic Blue",
-    features: ["M Sport Package", "Panoramic Sunroof", "Harman Kardon Sound"]
+    features: ["M Sport Package", "Panoramic Sunroof", "Harman Kardon Sound", "Air Suspension"]
   },
   {
     id: "x6",
@@ -134,7 +134,7 @@ const cars = [
     engine: "3.0L TwinPower Turbo, 340 hp",
     transmission: "8-Speed Steptronic Automatic",
     color: "Black Sapphire, Mineral White, Phytonic Blue",
-    features: ["M Sport Package", "Panoramic Sunroof", "Leather Interior"]
+    features: ["M Sport Package", "Panoramic Sunroof", "Merino Leather Interior"]
   },
   // Z SERIES
   {
