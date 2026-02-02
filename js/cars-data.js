@@ -4,11 +4,11 @@ const cars = [
     id: "218-gran-coupe",
     name: "218 Gran Coupe M Sport",
     series: "Seri 2 Gran Coupe",
-    price: "Rp. 1.053.000.000",
+    price: " mulai dari Rp. 922.000.000",
     image: "images/cars/218.png",
     engine: "1.5L TwinPower Turbo, 140 hp",
     transmission: "7-Speed Dual Clutch",
-    color: "Alpine White, Black Sapphire, Melbourne Red",
+    color: "Alpine White, Black Sapphire, Brooklyn Grey",
     features: ["M Sport Package", "LED Headlights", "Leather Interior"]
   },
   // SERI 3
@@ -16,7 +16,7 @@ const cars = [
     id: "320i",
     name: "320i M Sport",
     series: "Seri 3",
-    price: "Rp. 1.210.000.000",
+    price: " mulai dari Rp. 1.072.000.000",
     image: "images/cars/320i.png",
     engine: "2.0L TwinPower Turbo, 184 hp",
     transmission: "8-Speed Steptronic Automatic",
