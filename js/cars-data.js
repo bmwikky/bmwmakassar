@@ -9,7 +9,7 @@ const cars = [
     engine: "1.5L TwinPower Turbo, 140 hp",
     transmission: "7-Speed Dual Clutch",
     color: "Alpine White, Black Sapphire, Brooklyn Grey",
-    features: ["M Sport Package", "LED Headlights", "Leather Interior"]
+    features: ["M Sport Package", "Sensatec Leather Interior", "BMW Live Cockpit Plus"]
   },
   // SERI 3
   {
@@ -20,8 +20,8 @@ const cars = [
     image: "images/cars/320i.png",
     engine: "2.0L TwinPower Turbo, 184 hp",
     transmission: "8-Speed Steptronic Automatic",
-    color: "Alpine White, Black Sapphire, Sunset Orange",
-    features: ["M Sport Package", "Adaptive LED Headlights", "BMW Live Cockpit"]
+    color: "Alpine White,Black Sapphie, Arctic Race Blue, Brooklyn Grey",
+    features: ["M Sport Package", "Sensatec Leather Interior", "BMW Live Cockpit"]
   },
   {
     id: "330i",
@@ -44,7 +44,7 @@ const cars = [
     engine: "2.0L TwinPower Turbo, 258 hp",
     transmission: "8-Speed Steptronic Automatic",
     color: "Black Sapphire, Mineral White, Phytonic Blue",
-    features: ["M Sport Package", "Adaptive LED Headlights", "Leather Interior"]
+      features: ["M Aerodynamics Package", "Frameless Door Design", " Vernasca Leather Interior"]
   },
   {
     id: "430i-convertible",
@@ -67,7 +67,7 @@ const cars = [
     engine: "2.0L TwinPower Turbo, 184 hp",
     transmission: "8-Speed Steptronic Automatic",
     color: "Alpine White, Black Sapphire, Bluestone",
-    features: ["M Sport Package", "LED Headlights", "Leather Interior"]
+    features: ["Executive Lounge Comfort", "Harman Kardon Audio", " Vernasca Leather Interior"]
   },
   {
     id: "735i",
@@ -78,7 +78,7 @@ const cars = [
     engine: "3.0L TwinPower Turbo, 340 hp",
     transmission: "8-Speed Steptronic Automatic",
     color: "Black Sapphire, Mineral White, Manhattan Grey",
-    features: ["M Sport Package", "Panoramic Sunroof", "Luxury Leather Interior"]
+    features: ["BMW Theatre Screen 31", "Executive lounge seating", "Luxury Leather Interior", "Bowers & Wilkins Audio"]
   },
   // X SERIES
   {
