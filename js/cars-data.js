@@ -1,4 +1,4 @@
-dconst cars = [
+const cars = [
   // SERI 2
   {
     id: "218-gran-coupe",
