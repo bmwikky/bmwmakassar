@@ -167,11 +167,12 @@
   <!-- Script -->
   <script src="js/cars-data.js"></script>
   <script>
-    // Ambil ID mobil dari query string
-    const params = new URLSearchParams(window.location.search);
-    const carId = parseInt(params.get('model'));
+    // Ambil ID mobil dari query string (string)
+const params = new URLSearchParams(window.location.search);
+const carId = params.get('model'); // biarkan string
 
-    const car = cars.find(c => c.id === carId);
+const car = cars.find(c => c.id === carId); // cocokkan string dengan string
+
     const container = document.getElementById('detailContainer');
 
     if(car) {
