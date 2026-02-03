@@ -1,45 +1,70 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricelist BMW Astra Makassar</title>
-     <link rel="icon" href="/images/bmw-logo.png">
-  <link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricelist BMW Astra Makassar</title>
+  <link rel="icon" type="image/png" href="images/bmw-logo.png">
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar">
-  <div class="logo-box">
-    <img src="/images/bmw-logo.png" alt="BMW Logo" class="logo-img">
-    <div class="logo-text">BMW <span>Astra Makassar</span></div>
-  </div>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cars.html">Model</a></li>
-            <li><a href="pricelist.html">Pricelist</a></li>
-            <li><a href="contact.html">Kontak</a></li>
-        </ul>
-    </nav>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="logo-box">
+      <img src="images/bmw-logo.png" alt="BMW Logo" class="logo-img">
+      <div class="logo-text">BMW <span>Astra Makassar</span></div>
+    </div>
 
-    <!-- Konten Pricelist -->
-    <main style="padding: 20px; text-align: center;">
-        <h1>Daftar Harga Mobil BMW</h1>
-        <p>Silakan lihat pricelist resmi kami di bawah ini:</p>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="cars.html">Model</a>
+      <a href="pricelist.html" class="active">Pricelist</a>
+      <a href="contact.html">Kontak</a>
+    </div>
+  </nav>
+  <!-- ===== END NAVBAR ===== -->
 
-        <!-- Embed PDF -->
-        <iframe src="images/pricelist.pdf" 
-                width="80%" 
-                height="600px" 
-                style="border:1px solid #ccc;">
-            PDF tidak dapat ditampilkan. <a href="images/pricelist.pdf">Klik di sini untuk mengunduh</a>.
+  <!-- ===== PRICE LIST SECTION ===== -->
+  <section class="about">
+    <div class="container" style="text-align:center;">
+      <h2>Official Pricelist BMW</h2>
+      <p style="margin-bottom:20px;">
+        Unduh atau lihat daftar harga resmi BMW Astra Makassar di bawah ini.
+      </p>
+
+      <div style="
+        max-width: 900px;
+        margin: auto;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+      ">
+        <iframe 
+          src="images/pricelist.pdf"
+          width="100%"
+          height="650"
+          style="border:none;">
         </iframe>
-    </main>
+      </div>
 
-    <!-- Footer (opsional, kalau ada di index.html) -->
-    <footer>
-        <p>&copy; 2026 BMW Astra Makassar</p>
-    </footer>
+      <div style="margin-top:20px;">
+        <a href="images/pricelist.pdf" target="_blank" class="btn-primary">
+          Download Pricelist PDF
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- ===== END PRICE LIST ===== -->
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/628131726712" class="wa-float" target="_blank" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 32 32" width="26" height="26">
+      <path fill="#fff" d="M16.04 2.003c-7.732 0-14 6.268-14 14 0 2.464.64 4.88 1.856 7.012L2 30l7.204-1.892c2.044 1.116 4.344 1.704 6.836 1.704 7.732 0 14-6.268 14-14s-6.268-14-14-14z"/>
+    </svg>
+  </a>
+
 </body>
 </html>
